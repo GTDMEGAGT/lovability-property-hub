@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const year = new Date().getFullYear();
 
   const featuredProperties = [
     {
@@ -317,7 +318,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t text-center text-muted-foreground">
-            <p>&copy; 2024 PropertyHub. All rights reserved.</p>
+            <p>&copy; {year} TECH-X4. All rights reserved.</p>
           </div>
         </div>
       </footer>
